@@ -1,0 +1,11 @@
+class Solution{
+    static long factorial(int N){
+       int fac=1;
+       for(int i=1;i<=N;i++)
+       {
+           fac*=i;
+       }
+       return fac;
+    }
+}
+

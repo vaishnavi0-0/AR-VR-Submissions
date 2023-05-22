@@ -1,0 +1,23 @@
+class Solution {
+    static String armstrongNumber(int n){
+        int count=0,n1=n,sum=0,rem;
+        while(n!=0)
+        {
+            n/=10;
+            count++;
+        }
+        n=n1;
+        while(n!=0)
+        {
+            rem=n%10;
+            n/=10;
+            sum+=Math.pow(rem,count);
+        }
+        if(sum==n1)
+        return "Yes";
+        else
+        return "No";
+        
+    }
+}
+
